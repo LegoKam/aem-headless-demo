@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import logo from './resources/SecurBank_Logo_Main.svg';
+import logo from './resources/sportsbet_logo.svg';
 import bell from './resources/bell.svg';
 import avatar from './resources/avatar.png';
 import './App.css';
@@ -25,7 +25,7 @@ function App() {
     fetchContent();
   }, []);
 
-  const itemId =  "urn:aemconnection:/content/dam/securbank/en/dashboard/account-dashboard/jcr:content/data/master";
+  const itemId =  "urn:aemconnection:/content/dam/sportsbet/dashboard/account-dashboard/jcr:content/data/master";
             
 
 
@@ -41,9 +41,9 @@ function App() {
             <div>
               <ul>
                 <li><strong>Dashboard</strong></li>
-                <li><a href="#">Saving Account</a></li>
-                <li><a href="#">Transactions</a></li>
-                <li><a href="#">Cards</a></li>
+                <li><a href="#">Bet live</a></li>
+                <li><a href="#">Best Bet Tips</a></li>
+                <li><a href="#">Specials</a></li>
               </ul>
             </div>
             <div>

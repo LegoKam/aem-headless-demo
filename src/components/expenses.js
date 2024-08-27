@@ -150,7 +150,7 @@ export default function Expenses({expensesTitle}) {
             <div className='info'>
                 <div className='infoBox'>
                     <div className='infoBox-top'>
-                        <span className='infoBox-title'>Total Income</span><span className='infoBox-summary blue'><FiChevronUp/> 2.11%</span>
+                        <span className='infoBox-title'>Profits</span><span className='infoBox-summary blue'><FiChevronUp/> 2.11%</span>
                     </div>
                     <div className='infoBox-chartBox'><span className='infoBox-value blue'>+ $4,266.00</span><span className="infoBox-chart"><ReactEChartsCore 
                         echarts={echarts} 
@@ -181,7 +181,7 @@ export default function Expenses({expensesTitle}) {
                 </div>
                 <div className='infoBox'>
                 <div className='infoBox-top'>
-                    <span className='infoBox-title'>Total Expense</span><span className='infoBox-summary pink'><FiChevronDown/> 2.11%</span>
+                    <span className='infoBox-title'>Wagers</span><span className='infoBox-summary pink'><FiChevronDown/> 2.11%</span>
                 </div>
                 <div className='infoBox-chartBox'><span className='infoBox-value pink'>- $2,346.00</span><span className="infoBox-chart"><ReactEChartsCore 
                     echarts={echarts} 
@@ -212,7 +212,7 @@ export default function Expenses({expensesTitle}) {
                 </div>
                 <div className='infoBox'>
                     <div className='infoBox-top'> 
-                        <span className='infoBox-title'>Balance</span><span className='infoBox-summary'>+15%</span>
+                        <span className='infoBox-title'>ROI</span><span className='infoBox-summary'>+15%</span>
                     </div>
                     <div className='infoBox-chartBox'><span className='infoBox-value'>$1,920.00</span><span className="infoBox-chart"><ReactEChartsCore 
                         echarts={echarts} 

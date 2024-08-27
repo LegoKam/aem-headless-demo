@@ -210,12 +210,11 @@ header {
 
 .header-nav ul{
   list-style-type: none;
-
   justify-content: space-between;
   margin: 0;
   padding-top: 8px;
   display: none;
-
+ 
   @media (min-width: 900px) {
     min-width: 500px;
     display: flex;
