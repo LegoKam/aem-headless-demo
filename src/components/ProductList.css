@@ -1,0 +1,29 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+}
+
+.product-tile {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-tile img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.product-tile h2 {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+.product-tile p {
+    color: #555;
+}
