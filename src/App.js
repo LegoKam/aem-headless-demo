@@ -45,6 +45,11 @@ function App() {
               sophisticated. Learn more about protecting yourself from scams
             </p>
           </div>
+
+          <div data-aue-resource="urn:aem:/content/securbank/index/jcr:content" data-aue-prop="jcr:description" data-aue-type="text">
+            Click here
+          </div>
+
           <div className="header-nav">
             <div>
               <img src={logo} className="logo" alt="logo" />
@@ -91,6 +96,7 @@ function App() {
               </a>
             </div>
             <div className="twocol">
+
               <Accountbalance greeting={content && content.greeting} />
               <CreditCardDetails cardLabel={content && content.cardLabel} />
             </div>
