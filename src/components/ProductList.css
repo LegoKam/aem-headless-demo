@@ -16,6 +16,7 @@
 .product-tile img {
     max-width: 100%;
     border-radius: 4px;
+    margin-top: 16px; /* Add buffer above the image */
 }
 
 .product-tile h2 {
