@@ -4,6 +4,7 @@ import { time } from "echarts";
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
+  let options = {credentials: "include"};
 
   let url = `https://publish-p129970-e1316086.adobeaemcloud.com/graphql/execute.json/myer/listproducts?${Date.now()}`;
   if (window.location && window.location.ancestorOrigins.length > 0) {
@@ -12,7 +13,7 @@ export default function ProductList() {
   console.log("URL??" + url);
 
   useEffect(() => {
-    fetch(url)
+    fetch(url, options)
       .then((response) => response.json())
       .then((data) => setProducts(data.data.productsList.items))
       .catch((error) => console.error("Error fetching products:", error));
