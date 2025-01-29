@@ -5,7 +5,7 @@ import logo from "./resources/Myer_Logo.svg";
 import bell from "./resources/bell.svg";
 import avatar from "./resources/avatar.png";
 import "./App.css";
-import Articles from "./components/articles";
+// import Articles from "./components/articles";
 import Accountbalance from "./components/accountbalance";
 import Transactions from "./components/transactions";
 import Expenses from "./components/expenses";
@@ -102,7 +102,7 @@ function App() {
               <FAQ faq={content && content.articles} />
             </div>
             <div>
-              <Articles articles={content && content.articles} />
+              {/* <Articles articles={content && content.articles} /> */}
             </div>
           </div>
         </main>
