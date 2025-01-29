@@ -5,9 +5,14 @@ import { time } from "echarts";
 export default function ProductList() {
   const [products, setProducts] = useState([]);
 
+  const url = "https://publish-p129970-e1316086.adobeaemcloud.com/graphql/execute.json/myer/listproducts?" + Date.now();
+  if(window.location && window.location.ancestorOrigins.length > 0) {
+    url = "https://author-p129970-e1316086.adobeaemcloud.com/graphql/execute.json/myer/listproducts";
+  }
+
   useEffect(() => {
     fetch(
-      `https://publish-p129970-e1316086.adobeaemcloud.com/graphql/execute.json/myer/listproducts?${Date.now()}`
+      `${url}`
     )
       .then((response) => response.json())
       .then((data) => setProducts(data.data.productsList.items))
