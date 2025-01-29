@@ -15,9 +15,9 @@ export default function ProductList() {
         <div className="product-list">
             {products.map(product => (
                 <div key={product._path} className="product-tile">
-                    <img src={`https://publish-p129970-e1316086.adobeaemcloud.com${product.productImage._dynamicUrl}`} alt={product.productTitle} />
-                    <h2>{product.productTitle}</h2>
-                    <p>{product.productDesc.plaintext}</p>
+                    <img data-aue-resource={`urn:aemconnection:{product._path}`} data-aue-prop="productImage" data-aue-type="media" src={`https://publish-p129970-e1316086.adobeaemcloud.com${product.productImage._dynamicUrl}`} alt={product.productTitle} />
+                    <h2 data-aue-resource={`urn:aemconnection:{product._path}`} data-aue-prop="productTitle" data-aue-type="text">{product.productTitle}</h2>
+                    <p data-aue-resource={`urn:aemconnection:{product._path}`} data-aue-prop="productDesc" data-aue-type="richtext">{product.productDesc.plaintext}</p>
                 </div>
             ))}
         </div>
