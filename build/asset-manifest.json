@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe6a8896.css",
+    "main.js": "/static/js/main.5baf13f7.js",
+    "static/js/496.4911f5dd.chunk.js": "/static/js/496.4911f5dd.chunk.js",
+    "static/media/offer2.jpg": "/static/media/offer2.ecee4f4abd8a8d89295e.jpg",
+    "static/media/offer1.jpg": "/static/media/offer1.0051189d0e2eb7b48552.jpg",
+    "static/media/maskedbackground.svg": "/static/media/maskedbackground.345f584721f431f77f1d7ce5a4297123.svg",
+    "static/media/finance_icon.svg": "/static/media/finance_icon.1b4b8584a93e15271b3349baef1aa217.svg",
+    "static/media/Myer_Logo.svg": "/static/media/Myer_Logo.3596a1f48da04c38245880091ca7b9a4.svg",
+    "static/media/bell.svg": "/static/media/bell.29ef7d047e5abc0870176907054391df.svg",
+    "static/media/entertainment_icon.svg": "/static/media/entertainment_icon.3a3efb3adb01d98d92866f3fea44c1ce.svg",
+    "static/media/shop_icon.svg": "/static/media/shop_icon.e984345e2efd3e9cb534a99f06c6dca6.svg",
+    "index.html": "/index.html",
+    "main.fe6a8896.css.map": "/static/css/main.fe6a8896.css.map",
+    "main.5baf13f7.js.map": "/static/js/main.5baf13f7.js.map",
+    "496.4911f5dd.chunk.js.map": "/static/js/496.4911f5dd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe6a8896.css",
+    "static/js/main.5baf13f7.js"
+  ]
+}
