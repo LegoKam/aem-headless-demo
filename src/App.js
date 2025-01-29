@@ -77,13 +77,7 @@ function App() {
           >
             <div>
               <a href={content && content.bannerUrl}>
-                <img
-                  src={content && content.banner._publishUrl}
-                  className="banner"
-                  alt="banner"
-                  data-aue-prop="banner"
-                  data-aue-type="media"
-                />
+                test
               </a>
             </div>
             <ProductList />
