@@ -33,12 +33,7 @@ function App() {
   return (
     <HelmetProvider>
       <div className="App">
-        <Helmet>
-          <script
-            src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
-            async
-          />
-        </Helmet>
+
         <header className="App-header">
           <div className="header-alerts">
             <p>
