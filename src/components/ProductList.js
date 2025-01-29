@@ -9,7 +9,8 @@ export default function ProductList() {
   if (window.location && window.location.ancestorOrigins.length > 0) {
     url = `https://author-p129970-e1316086.adobeaemcloud.com/graphql/execute.json/myer/listproducts?${Date.now()}`;
   }
-  
+  console.log("URL??" + url);
+
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
