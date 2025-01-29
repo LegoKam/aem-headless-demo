@@ -13,6 +13,7 @@ import CreditCardDetails from "./components/creditcarddetails";
 import Footer from "./components/footer";
 import FetchContent from "./api/contentrequest";
 import FAQ from "./components/faq";
+import ProductList from "./components/ProductList";
 
 function App() {
   const [content, setContent] = useState(null);
@@ -46,8 +47,8 @@ function App() {
             </p>
           </div>
 
-          <div data-aue-resource="urn:aemconnection:/content/securbank/index/jcr:content" data-aue-prop="jcr:description" data-aue-type="text">
-            Click here
+          <div data-aue-resource="urn:aemconnection:/content/securbank/index/jcr:content" data-aue-prop="jcr:description" data-aue-type="text" data-aue-label="jcr:description">
+            
           </div>
 
           <div className="header-nav">
@@ -95,8 +96,9 @@ function App() {
                 />
               </a>
             </div>
+            <ProductList />
             <div className="twocol">
-
+              
               <Accountbalance greeting={content && content.greeting} />
               <CreditCardDetails cardLabel={content && content.cardLabel} />
             </div>
