@@ -46,7 +46,7 @@ function App() {
             </p>
           </div>
 
-          <div data-aue-resource="urn:aem:/content/securbank/index/jcr:content" data-aue-prop="jcr:description" data-aue-type="text">
+          <div data-aue-resource="urn:aemconnection:/content/securbank/index/jcr:content" data-aue-prop="jcr:description" data-aue-type="text">
             Click here
           </div>
 
