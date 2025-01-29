@@ -7,7 +7,7 @@ export default function ProductList() {
 
   useEffect(() => {
     fetch(
-      "https://publish-p129970-e1316086.adobeaemcloud.com/graphql/execute.json/myer/listproducts?" + time
+      "https://publish-p129970-e1316086.adobeaemcloud.com/graphql/execute.json/myer/listproducts?" + Date.getTime()
     )
       .then((response) => response.json())
       .then((data) => setProducts(data.data.productsList.items))
