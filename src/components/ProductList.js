@@ -15,7 +15,7 @@ export default function ProductList() {
             {products.map(product => (
                 <div key={product._path} className="product-tile">
                     
-                    <img src='https://publish-p129970-e1316086.adobeaemcloud.com/{product.productImage._dynamicUrl}' alt={product.productTitle} />
+                    <img src='https://publish-p129970-e1316086.adobeaemcloud.com/'{product.productImage._dynamicUrl} alt={product.productTitle} />
                     <h2>{product.productTitle}</h2>
                     <p>{product.productDesc.plaintext}</p>
                 </div>
