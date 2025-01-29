@@ -80,7 +80,7 @@ function App() {
                 test
               </a>
             </div>
-            <ProductList />
+            
             <div className="twocol">
               
               <Accountbalance greeting={content && content.greeting} />
@@ -99,9 +99,10 @@ function App() {
               {/* <Articles articles={content && content.articles} /> */}
             </div>
           </div>
+          <ProductList />
         </main>
 
-        <ProductList />
+
 
         <footer>
           <Footer />
