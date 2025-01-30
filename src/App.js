@@ -5,14 +5,9 @@ import logo from "./resources/Myer_Logo.svg";
 import bell from "./resources/bell.svg";
 import avatar from "./resources/avatar.png";
 import "./App.css";
-// import Articles from "./components/articles";
-import Accountbalance from "./components/accountbalance";
-import Transactions from "./components/transactions";
-import Expenses from "./components/expenses";
-import CreditCardDetails from "./components/creditcarddetails";
+
 import Footer from "./components/footer";
 import FetchContent from "./api/contentrequest";
-import FAQ from "./components/faq";
 import ProductList from "./components/ProductList";
 
 function App() {
