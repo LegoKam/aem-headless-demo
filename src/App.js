@@ -37,8 +37,7 @@ function App() {
         <header className="App-header">
           <div className="header-alerts">
             <p>
-              <strong>Alert!</strong> Scams are growing ever more complex and
-              sophisticated. Learn more about protecting yourself from scams
+              <strong>Alert!</strong> Free Standard Delivery applies to orders $99 and over. For orders under $99, a standard delivery fee of $9.95 applies no matter where you live in Australia.
             </p>
           </div>
           <div className="header-nav">
@@ -47,16 +46,16 @@ function App() {
               <div>
                 <ul>
                   <li>
-                    <strong>Dashboard</strong>
+                    <strong>Home</strong>
                   </li>
                   <li>
-                    <a href="#">Bet live</a>
+                    <a href="#">Women</a>
                   </li>
                   <li>
-                    <a href="#">Best Bet Tips</a>
+                    <a href="#">Men</a>
                   </li>
                   <li>
-                    <a href="#">Specials</a>
+                    <a href="#">Beauty</a>
                   </li>
                 </ul>
               </div>
@@ -76,30 +75,10 @@ function App() {
             data-aue-filter="cf"
           >
             <div>
-              <a href={content && content.bannerUrl}>
-                test
-              </a>
+              <ProductList />
             </div>
             
-            <div className="twocol">
-              
-              <Accountbalance greeting={content && content.greeting} />
-              <CreditCardDetails cardLabel={content && content.cardLabel} />
             </div>
-            <div className="twocol">
-              <Transactions
-                transactionTitle={content && content.transactionTitle}
-              />
-              <Expenses expensesTitle={content && content.expensesTitle} />
-            </div>
-            <div>
-              {/* <FAQ faq={content && content.articles} /> */}
-            </div>
-            <div>
-              {/* <Articles articles={content && content.articles} /> */}
-            </div>
-          </div>
-          <ProductList />
         </main>
 
 
