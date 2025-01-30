@@ -11,19 +11,6 @@ import FetchContent from "./api/contentrequest";
 import ProductList from "./components/ProductList";
 
 function App() {
-  const [content, setContent] = useState(null);
-
-  useEffect(() => {
-    const fetchContent = async () => {
-      const result = await FetchContent();
-      setContent(result.data.dashboardByPath.item);
-    };
-
-    fetchContent();
-  }, []);
-
-  const itemId =
-    "urn:aemconnection:/content/dam/securbank/en/dashboard/account-dashboard/jcr:content/data/master";
 
   return (
     <HelmetProvider>
