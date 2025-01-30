@@ -64,16 +64,11 @@ function App() {
           </div>
         </header>
         <main>
-          <div
-            className="section"
-            data-aue-resource={itemId}
-            data-aue-type="reference"
-            data-aue-filter="cf"
-          >
+
             <div>
               <ProductList />
             </div>
-          </div>
+
         </main>
 
         <footer>
