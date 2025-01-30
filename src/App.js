@@ -33,11 +33,12 @@ function App() {
   return (
     <HelmetProvider>
       <div className="App">
-
         <header className="App-header">
           <div className="header-alerts">
             <p>
-              <strong>Alert!</strong> Free Standard Delivery applies to orders $99 and over. For orders under $99, a standard delivery fee of $9.95 applies no matter where you live in Australia.
+              Free Standard Delivery applies to orders $99 and over. For orders
+              under $99, a standard delivery fee of $9.95 applies no matter
+              where you live in Australia.
             </p>
           </div>
           <div className="header-nav">
@@ -77,11 +78,8 @@ function App() {
             <div>
               <ProductList />
             </div>
-            
-            </div>
+          </div>
         </main>
-
-
 
         <footer>
           <Footer />
