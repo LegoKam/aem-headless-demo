@@ -14,6 +14,7 @@ import Footer from "./components/footer";
 import FetchContent from "./api/contentrequest";
 import FAQ from "./components/faq";
 import ProductList from "./components/ProductList";
+import Container from "./components/container";
 
 function App() {
   const [content, setContent] = useState(null);
@@ -75,6 +76,9 @@ function App() {
             data-aue-type="reference"
             data-aue-filter="cf"
           >
+
+            <Container resource="urn:aemconnection:/content/ue-commerce/kitchen-top-fragment/jcr:content/root/section" type="container" />
+            
             <div>
               <ProductList />
             </div>
