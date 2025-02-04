@@ -25,6 +25,7 @@ const Container = ({ resource, type, isComponent = "" }) => {
         const cfConnection = `urn:aemconnection:${getAuthorHost()}/${resource}/${key}`;
         return <Text key={key} content={childNode.text} connectionAndPath={cfConnection} />;
       } else if (childNode['sling:resourceType'] === 'core/franklin/components/image/v1/image') {
+        const cfConnection = `urn:aemconnection:${getAuthorHost()}/${resource}/${key}`;
         return <Image src={childNode.fileReference} connectionAndPath={cfConnection}/>;
       }
       return null;
