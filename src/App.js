@@ -61,11 +61,6 @@ function App() {
                   </li>
                 </ul>
               </div>
-              <div>
-                <img src={bell} className="bell" alt="bell" />
-                <img src={avatar} className="avatar" alt="avatar" />
-                <div className="authFriendly">Kam Radhakrishnan</div>
-              </div>
             </div>
           </div>
         </header>
