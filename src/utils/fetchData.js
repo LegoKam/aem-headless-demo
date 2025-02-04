@@ -1,4 +1,4 @@
-const {REACT_APP_DEFAULT_AUTHOR_HOST, REACT_APP_DEFAULT_PUBLISH_HOST} = process.env;
+const {REACT_APP_AEM_AUTHOR, REACT_APP_AEM_PUBLISH} = process.env;
 
 export const fetchData = async (path) => {
 	const url = `${getAuthorHost()}/${path.split(":/")[1]}.model.json`;
@@ -16,7 +16,7 @@ export const getAuthorHost = () => {
 		console.log("authorHost: " + searchParams.get("authorHost"));
 		return searchParams.get("authorHost");
 	} else {
-		console.log("authorHost: " + REACT_APP_DEFAULT_AUTHOR_HOST);
+		console.log("authorHost: " + REACT_APP_AEM_AUTHOR);
 		return REACT_APP_AEM_AUTHOR;
 	}
 }
