@@ -24,7 +24,7 @@ const Container = ({ resource, type, isComponent = "" }) => {
       if (childNode['sling:resourceType'] === 'core/franklin/components/text/v1/text') {
         return <Text key={key} content={childNode.text} />;
       } else if (childNode['sling:resourceType'] === 'core/franklin/components/image/v1/image') {
-        return <Image key={key} src={childNode.src} alt={childNode.alt} />;
+        return <Image src={childNode.fileReference} />;
       }
       return null;
     });
