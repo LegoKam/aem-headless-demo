@@ -3,7 +3,13 @@ const {REACT_APP_AEM_AUTHOR, REACT_APP_AEM_PUBLISH} = process.env;
 let options = {credentials: "include"};
 
 export const fetchData = async (path) => {
-	const url = `${getAuthorHost()}/${path.split(":/")[1]}.infinity.json`;
+
+	let hostUrl = getAuthorHost();
+	if (window.location && window.location.ancestorOrigins.length > 0) {
+	} else {
+		hostUrl = getPublishHost();
+	}
+	const url = `${hostUrl}/${path.split(":/")[1]}.infinity.json`;
 	console.log("fetchData: " + url);
 	const data = await fetch(url, options);
 	console.log("DATA========");
