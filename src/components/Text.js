@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Text = ({ text, content, connectionAndPath }) => {
   return (
     <div 

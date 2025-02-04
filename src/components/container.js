@@ -1,5 +1,5 @@
 import React from 'react';
-import {fetchData} from '../utils/fetchData';
+import {fetchData, getAuthorHost} from '../utils/fetchData';
 import Text from './Text';
 import Image from './Image';
 
