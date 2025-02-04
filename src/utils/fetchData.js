@@ -6,7 +6,8 @@ export const fetchData = async (path) => {
 	const url = `${getAuthorHost()}/${path.split(":/")[1]}.infinity.json`;
 	console.log("fetchData: " + url);
 	const data = await fetch(url, options);
-	console.log("fetchData: " + data);
+	console.log("DATA========");
+	console.log(data);
 	const json = await data.json();
 	console.log("fetchData: " + json);
 	return json;
