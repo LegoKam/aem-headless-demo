@@ -1,7 +1,6 @@
 import React from 'react';
 import {fetchData} from '../utils/fetchData';
 import Text from './Text';
-import Title from './Title';
 import Image from './Image';
 
 const Container = ({ resource, type, isComponent = "" }) => {
@@ -12,6 +11,8 @@ const Container = ({ resource, type, isComponent = "" }) => {
     fetchData(resource).then((data) => {
       const childNodes = Object.keys(data).filter(key => typeof data[key] === 'object');
       const childComponents = renderChildComponents(childNodes, data);
+      console.log("childComponents:====== " );
+      console.log(childComponents);
       setComponents(childComponents);
     });
   }, [resource]);
