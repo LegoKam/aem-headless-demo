@@ -15,13 +15,8 @@ export const fetchData = async (path) => {
 export const getAuthorHost = () => {
 	const url = new URL(window.location.href);
 	const searchParams = new URLSearchParams(url.search);
-	// if (searchParams.has("authorHost")) {
-	// 	console.log("authorHost: " + searchParams.get("authorHost"));
-	// 	return searchParams.get("authorHost");
-	// } else {
-		console.log("authorHost: " + REACT_APP_AEM_PUBLISH);
-		return REACT_APP_AEM_PUBLISH;
-	// }
+	console.log("authorHost: " + REACT_APP_AEM_AUTHOR);
+	return REACT_APP_AEM_AUTHOR;
 }
 
 export const getProtocol = () => {
@@ -46,9 +41,5 @@ export const getService = () => {
 export const getPublishHost = () => {
 	const url = new URL(window.location.href);
 	const searchParams = new URLSearchParams(url.search);
-	// if (searchParams.has("publishHost")) {
-	// 	return searchParams.get("publishHost");
-	// } else {
-		return REACT_APP_AEM_PUBLISH;
-	// }
+	return REACT_APP_AEM_PUBLISH;
 }
