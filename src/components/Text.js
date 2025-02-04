@@ -1,10 +1,15 @@
 import React from 'react';
 
-const Text = ({ text, content }) => {
+const Text = ({ text, content, connectionAndPath }) => {
   return (
-    <div>
+    <div 
+            data-aue-resource={connectionAndPath}
+    >
       <div>{text}</div>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+      <div 
+            data-aue-type="text"
+            data-aue-prop="text"
+            dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
 };

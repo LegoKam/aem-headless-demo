@@ -22,9 +22,10 @@ const Container = ({ resource, type, isComponent = "" }) => {
     return childNodes.map((key) => {
       const childNode = data[key];
       if (childNode['sling:resourceType'] === 'core/franklin/components/text/v1/text') {
-        return <Text key={key} content={childNode.text} />;
+        const cfConnection = `urn:aemconnection:${getAuthorHost()}/${resource}/${key}`;
+        return <Text key={key} content={childNode.text} connectionAndPath={cfConnection} />;
       } else if (childNode['sling:resourceType'] === 'core/franklin/components/image/v1/image') {
-        return <Image src={childNode.fileReference} />;
+        return <Image src={childNode.fileReference} connectionAndPath={cfConnection}/>;
       }
       return null;
     });
@@ -33,9 +34,6 @@ const Container = ({ resource, type, isComponent = "" }) => {
   return (
     <div className="container" data-aue-filter="container-filter" data-aue-model="container" data-aue-behavior={isComponent} data-aue-resource={resource} data-aue-type={type}>
      {components}
-    
-    Yes the container is loaded with my content!!
-
     </div>
   )
 };
