@@ -1,9 +1,11 @@
 const {REACT_APP_AEM_AUTHOR, REACT_APP_AEM_PUBLISH} = process.env;
 
+let options = {credentials: "include"};
+
 export const fetchData = async (path) => {
 	const url = `${getAuthorHost()}/${path.split(":/")[1]}.infinity.json`;
 	console.log("fetchData: " + url);
-	const data = await fetch(url, { headers: {"X-Aem-Affinity-Type": "api"}, credentials: "include"});
+	const data = await fetch(url, options);
 	console.log("fetchData: " + data);
 	const json = await data.json();
 	console.log("fetchData: " + json);
