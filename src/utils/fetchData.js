@@ -2,17 +2,22 @@ const {REACT_APP_DEFAULT_AUTHOR_HOST, REACT_APP_DEFAULT_PUBLISH_HOST} = process.
 
 export const fetchData = async (path) => {
 	const url = `${getAuthorHost()}/${path.split(":/")[1]}.model.json`;
+	console.log("fetchData: " + url);
 	const data = await fetch(url, { headers: {"X-Aem-Affinity-Type": "api"}, credentials: "include"});
+	console.log("fetchData: " + data);
 	const json = await data.json();
+	console.log("fetchData: " + json);
 	return json;
 };
 export const getAuthorHost = () => {
 	const url = new URL(window.location.href);
 	const searchParams = new URLSearchParams(url.search);
 	if (searchParams.has("authorHost")) {
+		console.log("authorHost: " + searchParams.get("authorHost"));
 		return searchParams.get("authorHost");
 	} else {
-		return REACT_APP_DEFAULT_AUTHOR_HOST;
+		console.log("authorHost: " + REACT_APP_DEFAULT_AUTHOR_HOST);
+		return REACT_APP_AEM_AUTHOR;
 	}
 }
 
@@ -41,6 +46,6 @@ export const getPublishHost = () => {
 	if (searchParams.has("publishHost")) {
 		return searchParams.get("publishHost");
 	} else {
-		return REACT_APP_DEFAULT_PUBLISH_HOST;
+		return REACT_APP_AEM_PUBLISH;
 	}
 }
