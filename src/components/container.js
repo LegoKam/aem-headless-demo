@@ -47,7 +47,9 @@ const Container = ({ resource, type, isComponent = "" }) => {
   React.useEffect(() => {
     if(!resource) return;
     fetchData(resource).then((data) => {
-      setComponents(createChildComponents(data[":items"], resource));
+      const childNodes = Object.keys(data).filter(key => typeof data[key] === 'object');
+      console.log("CHILD NODES");
+      console.log(childNodes);
     });
   }, [resource]);
   
