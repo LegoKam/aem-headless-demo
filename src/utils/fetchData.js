@@ -1,6 +1,6 @@
 const {REACT_APP_AEM_AUTHOR, REACT_APP_AEM_PUBLISH} = process.env;
 
-let options = {credentials: "omit"};
+let options = {credentials: "include"};
 
 export const fetchData = async (path) => {
 
