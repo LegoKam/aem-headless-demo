@@ -1,0 +1,131 @@
+{
+  "groups": [
+    {
+      "title": "General Components",
+      "id": "general",
+      "components": [
+        {
+          "title": "Text",
+          "id": "text",
+          "plugins": {
+            "aem": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {
+                  "text": "Default Text"
+                }
+              }
+            },
+            "aem65": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {
+                  "text": "Default Text"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Title",
+          "id": "title",
+          "plugins": {
+            "aem": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/title",
+                "template": {
+                  "jcr:title": "Default Title"
+                }
+              }
+            },
+            "aem65": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/title",
+                "template": {
+                  "jcr:title": "Default Title"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Image",
+          "id": "image",
+          "plugins": {
+            "aem": {
+              "page": {
+                "resourceType": "core/franklin/components/image/v1/image",
+                "template": {
+                  "fileReference": "/content/dam/myer/images/back2school.png"
+                }
+              }
+            },
+            "aem65": {
+              "page": {
+                "resourceType": "core/franklin/components/image/v1/image",
+                "template": {
+                  "fileReference": "/content/dam/myer/images/back2school.png"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "List",
+          "id": "list",
+          "plugins": {},
+          "model": {
+            "uri": "",
+            "fields": []
+          }
+        },
+        {
+          "title": "Container",
+          "id": "container",
+          "plugins": {
+            "aem": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section"
+              }
+            },
+            "aem65": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Advanced Components",
+      "id": "advanced",
+      "components": [
+        {
+          "title": "Rich Text",
+          "id": "richtext",
+          "plugins": {
+            "aem": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {
+                  "textIsRich": true,
+                  "text": "<p>Default Richtext</p>"
+                }
+              }
+            },
+            "aem65": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {
+                  "textIsRich": true,
+                  "text": "<p>Default Richtext</p>"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
