@@ -264,3 +264,24 @@ header {
 .bell {
   margin-right: 16px;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-header {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.App-main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.App-footer {
+  width: 100%;
+  flex: 0 0 auto;
+}

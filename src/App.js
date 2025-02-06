@@ -6,7 +6,6 @@ import logo from "./resources/Myer_Logo.svg";
 import "./App.css";
 
 import Footer from "./components/footer";
-import FetchContent from "./api/contentrequest";
 
 import ProductList from "./components/ProductList";
 import Container from "./components/container";
@@ -49,9 +48,8 @@ function App() {
             </div>
           </div>
         </header>
-        <main>
+        <main className="App-main">
           <div>
-
             <Container resource="urn:aemconnection:/content/ue-commerce/kitchen-top-fragment/jcr:content/root/section" type="container" />
             
             <div>
@@ -59,8 +57,7 @@ function App() {
             </div>
           </div>
         </main>
-
-        <footer>
+        <footer className="App-footer">
           <Footer />
         </footer>
       </div>
