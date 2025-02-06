@@ -14,17 +14,7 @@ import Container from "./components/container";
 function App() {
   const [content, setContent] = useState(null);
 
-  useEffect(() => {
-    const fetchContent = async () => {
-      const result = await FetchContent();
-      setContent(result.data.dashboardByPath.item);
-    };
-
-    fetchContent();
-  }, []);
-
-  const itemId =
-    "urn:aemconnection:/content/dam/securbank/en/dashboard/account-dashboard/jcr:content/data/master";
+  useEffect(() => {}, []);
 
   return (
     <HelmetProvider>
@@ -60,12 +50,7 @@ function App() {
           </div>
         </header>
         <main>
-          <div
-            className="section"
-            data-aue-resource={itemId}
-            data-aue-type="reference"
-            data-aue-filter="cf"
-          >
+          <div>
 
             <Container resource="urn:aemconnection:/content/ue-commerce/kitchen-top-fragment/jcr:content/root/section" type="container" />
             
